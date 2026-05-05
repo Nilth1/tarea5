@@ -2,10 +2,10 @@
 html { scroll-behavior: smooth; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-.header { width: 100%; background: rgba(22, 18, 14, 0.92); border-bottom: 1px solid rgba(245, 240, 230, 0.16); position: sticky; top: 0; z-index: 10; }
-.header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
-.logo img { width: 100px; }
-.textos { display: flex; gap: 24px; }
+.header { width: 100%; background: rgba(134, 93, 52, 0.92); border-bottom: 1px solid rgba(245, 240, 230, 0.16); position: sticky; top: 0; z-index: 10; }
+.header-container { max-width: 1500px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 7px 15px; }
+.logo img { width: 50px; }
+.textos { display: flex; gap: 12px; }
 .textos a { color: #f5f0e6; text-decoration: none; font-weight: 600; letter-spacing: 0.02em; }
 .textos a:hover { color: #d8b68f; }
 
