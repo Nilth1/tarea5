@@ -1,57 +1,92 @@
-﻿body { background: #1f1710; color: #f5f0e6; font-family: "Inter", "Helvetica", Arial, sans-serif; }
-html { scroll-behavior: smooth; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
+﻿
+* {margin: 0;padding: 0;box-sizing: border-box;}
 
-.header { width: 100%; background: rgba(134, 93, 52, 0.92); border-bottom: 1px solid rgba(245, 240, 230, 0.16); position: sticky; top: 0; z-index: 10; }
-.header-container { max-width: 1500px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 7px 15px; }
-.logo img { width: 50px; }
-.textos { display: flex; gap: 12px; }
-.textos a { color: #f5f0e6; text-decoration: none; font-weight: 600; letter-spacing: 0.02em; }
-.textos a:hover { color: #d8b68f; }
-
-.portada { width: 100%; min-height: 90vh; position: relative; overflow: hidden; }
-.portada img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-.hero-text { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 8%; color: #fff; text-shadow: 0 18px 40px rgba(0,0,0,0.55); }
-.hero-text h1 { font-size: clamp(3rem, 6vw, 5.2rem); line-height: 0.95; margin-bottom: 18px; }
-.hero-text p { max-width: 600px; font-size: 1.15rem; color: #f3e9d8; }
-
-.sobre-nosotros { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; padding: 80px 24px; }
-.sobre-texto h2 { font-size: 2.4rem; margin-bottom: 18px; color: #fdf5e8; }
-.sobre-texto p { font-size: 1.05rem; line-height: 1.8; color: #d8ccb6; }
-.sobre-imagen img { width: 100%; border-radius: 24px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); }
-
-.catalogo { padding: 60px 24px; background: rgba(255,255,255,0.03); }
-.titulo-catalogo { text-align: center; font-size: 2.6rem; margin-bottom: 36px; color: #f8f2e9; }
-.catalogo-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
-.co { padding: 24px; border-radius: 24px; background: rgba(255,255,255,0.07); backdrop-filter: blur(12px); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-.c-img { width: 100%; min-height: 220px; overflow: hidden; border-radius: 20px; margin-bottom: 18px; }
-.c-img img { width: 100%; height: 100%; object-fit: cover; }
-.co h3 { color: #fff; font-size: 1.45rem; margin-bottom: 12px; }
-.co p { color: #d3c8b2; font-size: 1rem; line-height: 1.7; }
-.container1 { background: rgba(75, 43, 20, 0.85); }
-.container2 { background: rgba(108, 68, 38, 0.82); }
-.container3 { background: rgba(88, 58, 27, 0.8); }
-
-.cta-contacto { max-width: 900px; margin: 0 auto; padding: 70px 24px 100px; text-align: center; }
-.cta-contacto h2 { font-size: 2.8rem; margin-bottom: 18px; color: #f8f2e9; }
-.cta-contacto p { font-size: 1.05rem; line-height: 1.8; max-width: 700px; margin: 0 auto 28px; color: #d3c8b2; }
-.boton-postulate { display: inline-block; background: #cfa16b; color: #1f1710; padding: 16px 42px; border-radius: 999px; text-decoration: none; font-weight: 700; transition: transform 0.25s ease, background 0.25s ease; }
-.boton-postulate:hover { background: #f0d2a3; transform: translateY(-2px); }
-
-.footer { background: rgba(20, 14, 7, 0.95); padding: 40px 24px; }
-.footer-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; color: #d3c8b2; }
-.footer-container h3 { margin-bottom: 10px; color: #fff; }
-.footer-container p { margin-bottom: 4px; font-size: 0.98rem; }
-
-@media (max-width: 900px) {
-    .sobre-nosotros { grid-template-columns: 1fr; padding: 50px 20px; }
-    .hero-text { align-items: center; text-align: center; padding: 0 6%; }
-    .textos { gap: 16px; flex-wrap: wrap; justify-content: center; }
+html {
+    scroll-behavior: smooth;
 }
 
-@media (max-width: 640px) {
-    .header-container { flex-direction: column; gap: 18px; padding: 16px; }
-    .catalogo-container { grid-template-columns: 1fr; }
-    .hero-text h1 { font-size: 2.6rem; }
-    .cta-contacto { padding: 50px 18px 80px; }
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(59, 58, 58, 0.8);
+    color: rgb(250, 220, 167);
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.menu-links a {
+    color: rgba(255, 244, 224, 0.8);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-caja {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-texts {
+    text-align: center;
+}
+
+.hero-texts h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero-texts h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.catalogo-boton {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.catalogo-boton:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
 }
