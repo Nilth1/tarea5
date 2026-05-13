@@ -182,5 +182,10 @@ body {
 
 .textostres {
     width: 53%;
+    margin-left: 20px;
+    margin-top: 350px;
+    color: rgb(36, 29, 21);
+    justify-content: center;
     text-align: center;
+
 }
